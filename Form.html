@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking</title>
+</head>
+<body>
+    <fieldset>
+        <h1 style="text-align: center;">Hotel Room Booking Form</h1>
+        <form action="./response.html" name="biodata" target="_blank" method="get" align="center">
+
+        <label for="name">Full Name :</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+        <br><br>
+        
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email ID" required>
+        <br><br>
+
+        <label for="contact">Phone Number :</label>
+        <input type="tel" id="contact" pattern="[+]{1}[0-9]{3}[0-9]{5}[0-9]{5}" placeholder="Enter your phone number" required>
+        <br><br>
+
+        <label for="cidate">Check-in Date :</label>
+        <input type="date" id="cidate" name="cidate" required>
+        <br><br>
+
+        <label for="codate">Check-out Date :</label>
+        <input type="date" id="codate" name="codate" required>
+        <br><br>
+
+        <label for="room">Room Type :</label>
+        <select id="room" name="roomtype">
+            <option value="single">Single Bed</option>
+            <option value="double">Double Bed</option>
+            <option value="two">Two Single Bed</option>
+            <option value="three">Double+Single Bed</option>
+        </select>
+        <br><br>
+
+        <label for="guests#">Number of Guests :</label>
+        <input type="number" id="guests#" name="guestnumber" min="1" max="3">
+        <br><br>
+
+        <label for="spl_req">Special Requests :</label>
+        <br>
+        <textarea name="reqs" id="spl_req" cols="40" rows="7"></textarea>
+        <br><br>
+
+        <input type="submit" value="Book Now">
+        <input type="reset" value="Reset Form">
+    </fieldset>
+</body>
+</html>
